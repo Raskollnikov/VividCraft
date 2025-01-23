@@ -71,18 +71,18 @@ function AboutSection() {
       </div>
 
       <div className="mt-16 py-[6rem] grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-8 border-t-2">
-        {aboutStats.map((stat, index) => {
+        {aboutStats.map((each, index) => {
           return (
             <div
               key={index}
               className="flex flex-col gap-2 md:gap-4 items-center justify-center text-center"
             >
               <h1
-                className={`text-8xl font-extrabold text-gray-200 ${stat.ff}`}
+                className={`text-8xl font-extrabold text-gray-200 ${each.ff}`}
               >
-                {stat.count}
+                {each.count}
               </h1>
-              <p className="text-gray-200 text-2xl">{stat.title}</p>
+              <p className="text-gray-200 text-2xl">{each.title}</p>
             </div>
           );
         })}

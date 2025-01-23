@@ -8,20 +8,20 @@ function ServicesSection() {
     <section className="mt-[4rem] lg:pt-[8rem] pb-16 px-[18rem] mq-sections">
       <Title title="Check Out Our Services." label="Our Services" />
       <div className="mt-[5rem] grid grid-cols-1 xl:grid-cols-3 gap-6 md:grid-cols-2">
-        {services.map((service, index) => {
+        {services.map((each, index) => {
           return (
             <div
               key={index}
               className="relative p-10 flex flex-col text-white border border-colour-1 rounded-xl"
             >
               <div className="bg-2 self-start w-[5rem] h-[5rem] flex justify-center items-center rounded-xl border-2 border-colour-2 shadow-sm">
-                <span className="text-5xl text-gray-300">{service.icon}</span>
+                <span className="text-5xl text-gray-300">{each.icon}</span>
               </div>
               <div>
-                <h3 className="py-6 font-semibold text-2xl">{service.title}</h3>
+                <h3 className="py-6 font-semibold text-2xl">{each.title}</h3>
                 {/* List */}
                 <ul className="pt-6 flex flex-col gap-3">
-                  {service.bulletPoints.map((point, index) => {
+                  {each.bulletPoints.map((point, index) => {
                     return (
                       <li
                         key={index}
