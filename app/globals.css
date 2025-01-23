@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --colour--bg-1: #181818;
+  --colour--bg-2: #212121;
+  --colour--bg-3: #252525;
+  --colour--bg-4: #323232;
+  --colour--border-1: #323232;
+  --colour--border-2: #2a2a2a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--colour--bg-1);
+  @apply text-gray-300;
 }
