@@ -2,7 +2,6 @@ import FooterSection from "@/app/Components/Sections/FooterSection/FooterSection
 import Title from "@/app/Components/Title/Title";
 import portfolios from "@/utils/portfolios";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -53,9 +52,9 @@ function page({ params }: Props) {
               <div className="mt-8 md:pl-16 md:border-l-2">
                 <h3 className="text-gray-300 font-medium">Project Details</h3>
                 <div className="mt-2 md:mt-8 flex flex-col gap-4">
-                  {portfolio.details.paragraphs.map((each, index) => (
+                  {portfolio.details.paragraphs.map((detail, index) => (
                     <p key={index} className="text-gray-300">
-                      {each}
+                      {detail}
                     </p>
                   ))}
                 </div>
@@ -89,8 +88,6 @@ function page({ params }: Props) {
                 </div>
               </div>
             </div>
-
-          
 
             <div className="flex flex-col">
               <div className="flex gap-8">
