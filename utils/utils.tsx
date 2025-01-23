@@ -111,25 +111,25 @@ export const baseText = [
 
 export const awards = [
   {
-    date: "January 2024",
+    date: "January 2025",
     companyLogo: "/images/logos/logo--behance.png",
     category: "Best UX",
     link: "https://www.behance.net/",
   },
   {
-    date: "June 2021",
+    date: "June 2024",
     companyLogo: "/images/logos/logo--awwwards.png",
     category: "Site of the Day",
     link: "https://www.awwwards.com/",
   },
   {
-    date: "March 2022",
+    date: "March 2024",
     companyLogo: "/images/logos/logo--dribble.png",
     category: "Best Design",
     link: "https://dribbble.com/",
   },
   {
-    date: "June 2021",
+    date: "June 2025",
     companyLogo: "/images/logos/logo--awwwards.png",
     category: "Site of the Day",
     link: "https://www.awwwards.com/",

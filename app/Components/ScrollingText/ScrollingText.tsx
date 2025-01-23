@@ -21,15 +21,15 @@ function ScrollingText({ direction }: ScrollingTextProps) {
         animate={{ x: animDirection }}
         transition={{ duration: 250, repeat: Infinity, ease: "linear" }}
       >
-        {textFilled.map((text, index) => {
+        {textFilled.map((each, index) => {
           return (
             <span
               key={index}
               className={`scrolling-text px-4 pr-12 inline-block align-middle ${
-                text.outline || ""
+                each.outline || ""
               } `}
             >
-              {text.text}
+              {each.text}
               <span className="pl-10">&ndash;</span>
             </span>
           );
