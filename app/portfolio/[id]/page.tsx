@@ -4,13 +4,8 @@ import portfolios from "@/utils/portfolios";
 import Image from "next/image";
 import React from "react";
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
 
-function page({ params }: Props) {
+function page({ params }: any) {
   const { id } = params;
 
   const portfolio = portfolios.find((portfolio) => portfolio.link === id);
